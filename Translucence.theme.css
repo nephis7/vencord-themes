@@ -1,0 +1,90 @@
+/**
+ * @name Translucence
+ * @version 1.0.7
+ * @description A translucent/frosted glass Discord theme
+ * @author CapnKitten
+ *
+ * @website http://github.com/CapnKitten
+ * @source https://github.com/CapnKitten/BetterDiscord/blob/master/Themes/Translucence/css/source.css
+ * @donate https://paypal.me/capnkitten
+ * @invite jzJkA6Z
+ */
+
+@import url(https://capnkitten.github.io/BetterDiscord/Themes/Translucence/css/source.css);
+
+:root {
+	/* APP ELEMENTS */
+	--app-bg: url(https://github.com/nephis7/images-for-vencord/blob/main/frierenwp.jpg?raw=true);
+	--app-blur: 3px;
+	--app-margin: 6px;
+	--app-radius: 28px;
+
+	/* ACCENT HSL AND TEXT COLOR SETTINGS */
+	--accent-hue: 260;
+	--accent-saturation: 47.5%;
+	--accent-lightness: 57.1%;
+	--accent-opacity: 0.1;
+	--accent-text-color: hsla(295, 53%, 86%, 0.795);
+
+	/* SIDEBARS AND CHAT AREA COLOR SETTINGS */
+	--sidebar-color: hsla(285, 21%, 11%, 0.705);
+	--main-content-color: hsla(285, 21%, 11%, 0.705);
+
+	/* MESSAGE SETTINGS */
+	--message-color: hsla(287, 12%, 40%, 0);
+	--message-radius: 28px;
+	--message-padding-top: 0px;
+	--message-padding-side: 0px;
+
+	/* REPLY HSL COLOR SETTINGS */
+	--reply-hue: 226;
+	--reply-saturation: 77.4%;
+	--reply-lightness: 61.8%;
+	--reply-opacity: 1;
+
+	/* TEXTAREA SETTINGS */
+	--textarea-color: 255,255,255;
+	--textarea-alpha: 0.1;
+	--textarea-alpha-focus: 0.15;
+	--textarea-text-color: hsl(300, 68%, 90%);
+	--textarea-radius: 28px;
+
+	/* CARD SETTINGS */
+	--card-color: hsla(0, 0%, 0%, 0.192);
+	--card-color-hover: hsl(0,0%,0%,0.5);
+	--card-color-select: hsl(0,0%,0%,0.7);
+
+	/* BUTTON SETTINGS */
+	--button-height: 32px;
+	--button-padding: 0 16px;
+	--button-action-color: hsl(0,0%,0%);
+	--button-radius: 16px;
+}
+
+@supports (color:color-mix(in lch,red,rgb(0, 0, 255))) {
+    .visual-refresh .theme-dark,
+    .visual-refresh.theme-dark {
+		/* TEXT COLOR SETTINGS */
+		--text-primary: hsl(298, 100%, 89%);
+		--text-secondary: hsl(294, 50%, 80%);
+
+		/* CHANNEL COLOR SETTINGS */
+		--channels-default: hsl(291, 8%, 49%);
+		--channel-icon: hsl(306, 14%, 56%);
+
+		/* ICON COLOR SETTINGS */
+		--icon-primary: hsl(300, 67%, 86%);
+		--icon-secondary: hsl(298, 30%, 76%);
+		--icon-tertiary: hsl(294, 16%, 65%);
+
+		/* INTERACTIVE COLOR SETTINGS */
+		--interactive-normal: hsl(292, 26%, 70%);
+		--interactive-hover: hsl(292, 36%, 83%);
+		--interactive-active: hsl(294, 58%, 82%);
+		--interactive-muted: hsl(300, 9%, 40%);
+
+		/* BACKGROUND MODIFIER SETTINGS */
+		--background-modifier-hover: hsla(288, 29%, 65%, 0.075);
+		--background-modifier-selected: hsla(295, 25%, 72%, 0.125);
+    }
+}
